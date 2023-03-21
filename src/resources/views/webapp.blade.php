@@ -25,7 +25,10 @@
         <img src="{{asset('/assets/img/logo.png')}}" alt="POSSE">
         <p class="header-week">4th week</p>
       </div>
-      <button class="header-button js-openModal">記録・投稿</button>
+      <div class="header-buttons">
+        <button class="header-button js-openModal">記録・投稿</button>
+        <button class="header-button js-openRoutine">タスク管理</button>
+      </div>
     </nav>
     <div class="overlay">
       <div class="modal">
