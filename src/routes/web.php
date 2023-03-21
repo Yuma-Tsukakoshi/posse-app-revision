@@ -22,6 +22,10 @@ Route::get('/', function () {
 
 Route::get('/webapp', [WebAppController::class,'index'])->middleware(['auth', 'verified'])->name('webapp');
 
+Route::get('/webapp/routine', function () {
+    return view('routine');
+});
+
 Route::get('/bar_data',[WebAppController::class,'getBarData']);
 Route::get('/pie1_data',[WebAppController::class,'getPie1Data']);
 Route::get('/pie2_data',[WebAppController::class,'getPie2Data']);
