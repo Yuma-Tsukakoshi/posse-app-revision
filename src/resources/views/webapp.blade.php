@@ -57,6 +57,7 @@
                     <div class="language-list">
                       @foreach ($languages as $language)
                       <input type="checkbox" id="check{{$loop->iteration + count($contents)}}" class="input-checkbox" name="language" value="{{$language->language}}"><label for="check{{$loop->iteration + count($contents)}}" class="label">{{$language->language}}</label>
+                      <input type="number" value="0" min="1" max="20" step="1">
                       @endforeach
                     </div>
                   </div>

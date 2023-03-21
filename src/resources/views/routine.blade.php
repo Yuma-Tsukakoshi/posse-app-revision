@@ -100,12 +100,12 @@
           <div class="task-wrapper">
             <form id="taskInputForm">
               <div class="form-group">
-                <label for="task-name" class="flex-label">タスク名</label>
+                <label for="task-name" class="label1">タスク名</label>
                 <input type="text" class="form-content" id="task-name" placeholder="タスク名記入..." required>
               </div>
               <div class="flex">
                 <div class="form-group">
-                  <label for="task-severity"  class="flex-label">優先度</label>
+                  <label for="task-severity" class="flex-label">優先度</label>
                   <select id="task-severity" class="form-content" required>
                     <option class="severity-option" value="必須" >必須</option>
                     <option class="severity-option" value="任意" >任意</option>
@@ -117,10 +117,10 @@
                 </div>
                 <div class="form-group">
                   <label for="task-url">フォームリンク</label>
-                  <input type="url" class="form-content" id="task-url" value="" required>
+                  <input type="url" class="form-content" id="task-url" value="" required placeholder="フォームやサイトリンク記入...">
                 </div>
               </div>
-              <button type="submit" class="header-button">生成</button>
+              <button type="submit" class="header-button create-task-btn">生成</button>
             </form>
           </div>
           <div class="created-task">

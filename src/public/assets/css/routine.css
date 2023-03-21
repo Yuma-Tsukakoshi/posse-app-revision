@@ -550,14 +550,14 @@ main
   text-align: center;
 }
 .form-group{
-  padding: 6px;
+  padding: 5px;
   position: relative;
   align-items: center;
   display: flex;
 }
 .flex{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .flex .form-group:nth-child(1)
 {
@@ -566,46 +566,44 @@ main
 }
 .flex .form-group:nth-child(2)
 {
-  width: 60%;
+  width: 48%;
+  text-align: center;
+}
+.flex .form-group:nth-child(3)
+{
+  width: 100%;
   text-align: center;
 }
 .form-group > label{
   font-weight: bold;
   font-size: 14px;
-  width: 20%;
-
+}
+.label1{
+  margin-right: 40px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.flex-label:nth-child(1){
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 53px;
 }
 .form-content{
-  /* position: absolute; */
   display: block;
+  text-align: center;
   right: 5%;
   background-color: #fff;
   border-radius: 8px;
-  width: 80%;
+  width: 60%;
   padding: 5px;
 }
-.btn-primary{
+
+.create-task-btn{
   position: absolute;
-  margin-top: 12px;
-  font-size: 16px;
-  right:0%;
-  top: 4%;
-  transform: translateX(-50%);
-  font-weight: bold;
-  background-color:rgb(14, 78, 253);
-  color: #fff;
-  width: 80px;
-  letter-spacing: 2px;
-  height: 35px;
-  line-height:35px;
-  border-radius: 20px;
-  text-align: center;
-  transition: color , background-color .5s;
+  right: 0%;
+  bottom: 8%;
 }
-.btn-primary:hover{
-  color: #2B2D42;
-  background-color: #f3b122;
-}
+
 .well{
   font-size: 14px;
   background-color: #eee;
@@ -637,9 +635,6 @@ main
 }
 .label-info{
   margin-left: 12px;
-}
-.glyphicon{
-
 }
 .btn-warning{
   background-color: #f3b122;
