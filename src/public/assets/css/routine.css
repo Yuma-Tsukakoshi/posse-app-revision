@@ -14,7 +14,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #eeebebd2;
+  /* background-color: #eeebebd2; */
 }
 
 main {
@@ -331,8 +331,10 @@ header
   border-radius: 16px;
 }
 .header-nav .header-nav-contents .header-nav-list .dropdown-menu li:hover {
-  background-color: #65b1f0;
   color: #fff;
+  background: linear-gradient(to right,#0074BB 0%, #02CDFB 100%); 
+  box-shadow: 4px 5px 5px 0 #9bdceb;
+  border: none;
 }
 
 /*==================================================
