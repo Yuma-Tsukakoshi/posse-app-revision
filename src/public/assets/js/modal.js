@@ -98,5 +98,10 @@
   $closeButton.click(() => {
     $container.removeClass('openModal')
   })
+
+  // routine遷移
+  $(".js-openRoutine").on('click',function(){
+    location.href = 'http://localhost/webapp/routine'
+  })
 }
 
