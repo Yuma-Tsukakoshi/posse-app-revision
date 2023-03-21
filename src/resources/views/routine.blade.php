@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROUTINE_TODO</title>
+  <title>webapp</title>
   <script src="{{asset('/assets/js/jquery-3.6.1.min.js')}}" defer></script>
   <script src="https://kit.fontawesome.com/eca7fb4794.js" crossorigin="anonymous" defer></script>
   <script src="{{asset('/assets/js/main.js')}}" defer></script>
@@ -22,10 +22,10 @@
     <nav class="header-nav">
       <ul class="header-nav-contents">
         <li class="header-nav-list">
-          <div class="nav-title"><a href="https://web.10nikki.com/diary/2/26#" target="_blank">今日の日記</a></div>
+          <button class="header-button js-openWebapp">Webapp</button>
         </li>
         <li class="header-nav-list">
-          <div class="nav-title">POSSE</div>
+          <div class="header-button nav-title">POSSE</div>
           <ul class="dropdown-menu">
             <li class="nav-items">
               <a href="https://docs.google.com/spreadsheets/d/1RS0V39nABZt5I-CgEype0yDlYIs922DnnaejWlsm-B8/edit#gid=1824200838" target="_blank">ph3カリキュラム</a>
@@ -45,19 +45,16 @@
           </ul>
         </li>
         <li class="header-nav-list">
-          <div class="nav-title">サブリンク</div>
+          <div class="header-button nav-title">zoomリンク</div>
           <ul class="dropdown-menu">
             <li class="nav-items">
-              <a href="https://techtrain.dev/mypage" target="_blank">Tech Train</a>
+              <a href="https://us02web.zoom.us/j/89249953679?pwd=VUdlekhQSlNZdi9Hem03VTFabG5lZz09" target="_blank">毎週のmu</a>
             </li>
             <li class="nav-items">
-              <a href="https://codeprep.jp/featured" target="_blank">CODEPREP</a>
+              <a href="https://us02web.zoom.us/j/89249953679?pwd=VUdlekhQSlNZdi9Hem03VTFabG5lZz09" target="_blank">縦もくH</a>
             </li>
             <li class="nav-items">
-              <a href="https://paiza.jp/works/mypage" target="_blank">Paizaラーニング</a>
-            </li>
-            <li class="nav-items">
-              <a href="https://tutorials.chainer.org/ja/tutorial.html" target="_blank">Chainer</a>
+              <a href="https://us02web.zoom.us/j/89249953679?pwd=VUdlekhQSlNZdi9Hem03VTFabG5lZz09" target="_blank">横もくA</a>
             </li>
           </ul>
         </li>

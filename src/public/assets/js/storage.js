@@ -104,7 +104,6 @@ function fetchTasks(){
     let status = tasks[i].status;
 
     taskHTML += '<div class="well" data='+ id +'>'+
-    '<h6>Task ID: ' + id + '</h6>'+
     '<p><span class="label label-info">状態:</span>'+ status + ' /</p>'+
     '<h3>タスク名：' + name + ' /</h3>'+
     '<p><span class="glyphicon glyphicon-time">優先度：</span> ' + severity + ' /</p>'+
