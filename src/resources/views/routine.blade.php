@@ -22,13 +22,13 @@
     <nav class="header-nav">
       <ul class="header-nav-contents">
         <li class="header-nav-list">
-          <button class="header-button js-openWebapp">Webapp</button>
+          <button class="header-button js-openWebapp">Webappに戻る</button>
         </li>
         <li class="header-nav-list">
           <div class="header-button nav-title">POSSE</div>
           <ul class="dropdown-menu">
             <li class="nav-items">
-              <a href="https://docs.google.com/spreadsheets/d/1RS0V39nABZt5I-CgEype0yDlYIs922DnnaejWlsm-B8/edit#gid=1824200838" target="_blank">ph3カリキュラム</a>
+              <a href="https://github.com/Yuma-Tsukakoshi" target="_blank">Github</a>
             </li>
             <li class="nav-items">
               <a href="https://docs.google.com/spreadsheets/d/1W6UFRlzyWrJnPTNKabJUHVVEwBDMmy8ef1jAMpvpKCY/edit#gid=688004640" target="_blank">3.0振り返り</a>
@@ -98,9 +98,7 @@
   
         <section class="task">
           <div class="task-wrapper">
-            <h3>タスク生成</h3>
             <form id="taskInputForm">
-              <button type="submit" class="btn btn-primary">生成</button>
               <div class="form-group">
                 <label for="task-name" class="flex-label">タスク名</label>
                 <input type="text" class="form-content" id="task-name" placeholder="タスク名記入..." required>
@@ -109,16 +107,20 @@
                 <div class="form-group">
                   <label for="task-severity"  class="flex-label">優先度</label>
                   <select id="task-severity" class="form-content" required>
-                    <option class="severity-option" value="高い" >高い</option>
-                    <option class="severity-option" value="標準" >標準</option>
-                    <option class="severity-option" value="低い" >低い</option>
+                    <option class="severity-option" value="必須" >必須</option>
+                    <option class="severity-option" value="任意" >任意</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="task-deadline">締切日</label>
                   <input type="date" class="form-content" id="task-deadline" value="" required>
                 </div>
+                <div class="form-group">
+                  <label for="task-url">フォームリンク</label>
+                  <input type="url" class="form-content" id="task-url" value="" required>
+                </div>
               </div>
+              <button type="submit" class="header-button">生成</button>
             </form>
           </div>
           <div class="created-task">

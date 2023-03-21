@@ -18,6 +18,7 @@ function saveTask(e){
   let SeverityVal = $("#task-severity").val();
   let DateVal = $("#task-deadline").val();
   let taskId = chance.guid();
+  let UrlVal = $("#task-url").val();
   let taskStatus = 'TODO';
 
   let task = {
@@ -25,6 +26,7 @@ function saveTask(e){
     name: NameVal,
     severity: SeverityVal,
     date: DateVal,
+    url: UrlVal,
     status : taskStatus
   }
 
@@ -102,12 +104,14 @@ function fetchTasks(){
     let severity = tasks[i].severity;
     let date = tasks[i].date;
     let status = tasks[i].status;
+    let url = tasks[i].url;
 
     taskHTML += '<div class="well" data='+ id +'>'+
     '<p><span class="label label-info">状態:</span>'+ status + ' /</p>'+
     '<h3>タスク名：' + name + ' /</h3>'+
     '<p><span class="glyphicon glyphicon-time">優先度：</span> ' + severity + ' /</p>'+
-    '<p><span class="glyphicon glyphicon-user">締切日：</span> ' + date + ' /</p>'+ 
+    '<p><span class="glyphicon glyphicon-deadline">締切日：</span> ' + date + ' /</p>'+ 
+    '<p><span class="glyphicon glyphicon-url">URL: </span> ' +'<a href=' + url + ' target="_blank">リンク先/</a></p>'+ 
     '<a href="#" onclick="setStatusDone(\''+id+'\')" class="btn btn-warning">Finish</a> '+
     '<a href="#" onclick="deleteTask(\''+id+'\')" class="btn btn-danger">Delete</a>'+
     '</div>';
