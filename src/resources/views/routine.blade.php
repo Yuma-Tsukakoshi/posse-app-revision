@@ -68,7 +68,7 @@
   <div class="container">
     <main class="main">
       <div class="top-title">
-        <h2 class="routine-title">ルーティンやること</h2>
+        <h2 class="routine-title">WSシート保管</h2>
         <h2 class="routine-title">タスク追跡</h2>
       </div>
 
