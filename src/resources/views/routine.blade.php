@@ -75,7 +75,6 @@
       <div class="main-contents">
         <section class="routine">
           <div class="top-content">
-            <h3 class="action-title">実施可否</h3>
             <div class="timer-contents">
               <h4>＜経過時間＞</h4>
               <p class="time">
@@ -86,17 +85,9 @@
                 <input type="button" id="start" value="START">
                 <input type="button" id="stop" value="STOP" disabled>
                 <input type="button" id="reset" value="RESET">
-                <input type="button" id="record" value="RECORD">
               </p>
             </div>
           </div>
-          <ul class="routine-list" id="routine-list"></ul>
-
-          <div class="record-rest">
-            <h3>残りのタスク数<span id="rest-count">0</span></h3>
-            <h3>達成度<span id="achive">0</span>%</h3>
-          </div>
-          <button class="btn-reset" id="resetBtn">リセット</button>
         </section>
   
         <section class="task">
