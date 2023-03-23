@@ -6,10 +6,10 @@ window.addEventListener('DOMContentLoaded',()=>{
   fetchTasks();
 })
 window.addEventListener('DOMContentLoaded',()=>{
-  setOpacity();
+  deleteTask();
 })
 window.addEventListener('DOMContentLoaded',()=>{
-  restTask();
+  setOpacity();
 })
 
 
@@ -95,7 +95,7 @@ function deleteTask(id){
 
 function fetchTasks(){
   let tasks = JSON.parse(localStorage.getItem('tasks'));
-  let taksList = $("#taskList");
+  let taskList = $("#taskList");
   let taskHTML = '';
   
   for(let i=0;i<tasks.length;i++){
@@ -116,22 +116,5 @@ function fetchTasks(){
     '<a href="#" onclick="deleteTask(\''+id+'\')" class="btn btn-danger">Delete</a>'+
     '</div>';
   }
-  taksList.html(taskHTML);
-
-}
-
-function restTask(){
-  let taskLength = $(".routine-items").length;
-  let checkTask = $('input[name="check[]"]:checked').length;
-  $("#rest-count").html(taskLength - checkTask);
-  $("#achive").html(Math.floor(checkTask*100 / taskLength));
-
-  let condition = Math.floor(checkTask*100 / taskLength);
-  if(condition<=33){
-    $("#rest-count , #achive").css("backgroundColor","#f33a22");
-  }else if(condition<=66){
-    $("#rest-count , #achive").css("backgroundColor","#f3b122");
-  }else{
-    $("#rest-count , #achive").css("backgroundColor","rgb(7, 241, 144)");
-  }
+  taskList.html(taskHTML);
 }
