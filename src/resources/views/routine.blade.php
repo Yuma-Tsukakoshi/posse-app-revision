@@ -9,7 +9,10 @@
   <script src="https://kit.fontawesome.com/eca7fb4794.js" crossorigin="anonymous" defer></script>
   <script src="{{asset('/assets/js/main.js')}}" defer></script>
   <script src="{{asset('/assets/js/storage.js')}}" defer></script>
+  <script src="{{asset('/assets/js/drag.js')}}" defer></script>
   <script src="https://chancejs.com/chance.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/jkanban@1.3.1/dist/jkanban.min.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jkanban@1.3.1/dist/jkanban.min.css">
   <link rel="stylesheet" href="{{asset('/assets/css/reset.css')}}">
   <link rel="stylesheet" href="{{asset('/assets/css/routine.css')}}">
 </head>
