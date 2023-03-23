@@ -92,7 +92,7 @@
             </div>
           </div>
           <div id="controller">
-            <input type="button" id="add-button" value="追加">
+            <input class="header-button" type="button" id="add-button" value="メモ追加">
           </div>
           <div id="sticky-note-container"></div>
         </section>

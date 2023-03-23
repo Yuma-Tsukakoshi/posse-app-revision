@@ -1,9 +1,8 @@
 function getNewNote() {
   return  '<div class="note">' + 
           '<input type="text">' +
-          '<input class="delete-button" type="button" value="削除">' +
-          '<input data-color="#e00020" class="color-button" type="button" value="赤">' +
-          '<input data-color="#e0ff20" class="color-button" type="button" value="黄">' +
+          '<input class="delete-button sticky-button" type="button" value="削除">' +
+          '<input class="color-button" type="color" value="色設定">' +
           '</div>';
 }
 
@@ -17,7 +16,7 @@ function appendFunctions($note) {
   });
 
   $note.children(".color-button").on('click', function() {
-      const color = $(this).data('color');
+      const color = $(this).val();
       $(this).parents('.note').css('background-color', color);
 });
 }

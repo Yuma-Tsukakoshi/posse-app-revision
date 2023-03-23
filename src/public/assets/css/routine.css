@@ -650,32 +650,27 @@ main
   transform: translateY(20px);
 }
 
-.btn-reset{
-  position: absolute;
-  right: 3%;
-  bottom: 3%;
-  font-size: 16px;
-  font-weight: bold;
-  background-color:rgb(14, 78, 253);
-  color: #fff;
-  width: 80px;
-  letter-spacing: 2px;
-  height: 35px;
-  line-height:35px;
-  border-radius: 20px;
-  text-align: center;
-  transition: color , background-color .5s;
-}
-
 #sticky-note-container {
   height: 400px;
 }
 .note {
   background-color: aliceblue;
   padding: 10px;
+  border-radius: 16px;
   cursor: pointer;
 }
 .note > input[type="text"] {
   width: 90%;
   height: 5rem;
+  padding: 4px;
+  font-weight: bold;
+}
+.sticky-button{
+  background: linear-gradient(to right,#74777a 0%, #eaf5f7 100%); 
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin-right: 20px;
+  text-align: center;
+  box-shadow: 4px 5px 5px 0 #7e8080;
+  border: none;
 }

@@ -1,8 +1,7 @@
-window.addEventListener('DOMContentLoaded',()=>{
-  draggable();
-})
-
-function draggable() {
+// window.addEventListener('DOMContentLoaded',()=>{
+//   draggable();
+// })
+window.onload() = function draggable() {
   var items = document.querySelectorAll('.well');
   items.forEach(item=>{
     // console.log(item);

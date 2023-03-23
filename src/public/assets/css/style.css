@@ -639,6 +639,8 @@ footer-label
 .meter{
   width: 34px;
   height: 30px;
+  border-radius: 6px;
+  border: 1px solid black;
 }
 
 /* 
