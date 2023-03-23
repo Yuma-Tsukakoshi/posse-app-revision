@@ -48,7 +48,7 @@
                     <h2 class="modal-title">学習コンテンツ(複数選択可)</h2>
                     <div class="contents-list">
                       @foreach ($contents as $content)
-                      <input type="checkbox" id="check{{$loop->iteration}}" class="input-checkbox" name="content" value="{{$content->content}}"><label for="check{{$loop->iteration}}" class="label">{{$content->content}}</label>
+                      <input type="checkbox" id="check{{$loop->iteration}}" class="input-checkbox" name="content" value="{{$content->content}}"><label for="check{{$loop->iteration}}" class="label">{{$content->content}}<input type="number" value="0" min="0" max="20" step="1" class="meter"></label>
                       @endforeach
                     </div>
                   </div>
@@ -56,8 +56,7 @@
                     <h2 class="modal-title">学習言語(複数選択可)</h2>
                     <div class="language-list">
                       @foreach ($languages as $language)
-                      <input type="checkbox" id="check{{$loop->iteration + count($contents)}}" class="input-checkbox" name="language" value="{{$language->language}}"><label for="check{{$loop->iteration + count($contents)}}" class="label">{{$language->language}}</label>
-                      <input type="number" value="0" min="1" max="20" step="1">
+                      <input type="checkbox" id="check{{$loop->iteration + count($contents)}}" class="input-checkbox" name="language" value="{{$language->language}}"><label for="check{{$loop->iteration + count($contents)}}" class="label">{{$language->language}}<input type="number" value="0" min="0" max="20" step="1" class="meter"></label>
                       @endforeach
                     </div>
                   </div>
@@ -76,9 +75,9 @@
                     <input type="checkbox" id="check{{count($contents) + count($languages) + 1 }}" class="input-checkbox js-twitter" name="twitter" value="twitter"><label for="check{{count($contents) + count($languages) + 1 }}" class="share-text">Twitterにシェアする</label>
                   </div>
                 </div>
+                <button class="header-button bottom" id="record-modalButton">記録・投稿</button>
               </div>
             </div>
-            <button class="header-button bottom" id="record-modalButton">記録・投稿</button>
           </div>
           <!-- top-modal -->
           

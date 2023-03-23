@@ -635,6 +635,12 @@ footer-label
   display: none;
 }
 
+/* meter */
+.meter{
+  width: 34px;
+  height: 30px;
+}
+
 /* 
 responsive
 */
