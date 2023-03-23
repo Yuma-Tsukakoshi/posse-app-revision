@@ -615,6 +615,7 @@ main
   box-shadow: 5px 5px 2px rgba(202, 203, 206, 0.712);
   font-weight: bold;
   position: relative;
+  cursor: pointer;
 }
 .well > h6{
   font-size: 12px;
