@@ -66,7 +66,7 @@
     <main class="main">
       <div class="top-title">
         <h2 class="routine-title">ルーティンやること</h2>
-        <h2 class="routine-title">タスク追跡ツール</h2>
+        <h2 class="routine-title">タスク追跡</h2>
       </div>
 
       <div class="main-contents">

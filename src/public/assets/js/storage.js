@@ -111,7 +111,7 @@ function fetchTasks(){
     '<h3>タスク名：' + name + ' /</h3>'+
     '<p><span class="glyphicon glyphicon-time">優先度：</span> ' + severity + ' /</p>'+
     '<p><span class="glyphicon glyphicon-deadline">締切日：</span> ' + date + ' /</p>'+ 
-    '<p><span class="glyphicon glyphicon-url">URL: </span> ' +'<a href=' + url + ' target="_blank">リンク先/</a></p>'+ 
+    '<p><span class="glyphicon glyphicon-url">URL: </span> ' +'<a href=' + url + ' target="_blank">リンク先 /</a></p>'+ 
     '<a href="#" onclick="setStatusDone(\''+id+'\')" class="btn btn-warning">Finish</a> '+
     '<a href="#" onclick="deleteTask(\''+id+'\')" class="btn btn-danger">Delete</a>'+
     '</div>';

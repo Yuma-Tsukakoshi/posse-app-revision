@@ -610,10 +610,11 @@ main
   display:flex;
   flex-wrap: wrap;
   margin:16px;
-  padding:16px;
+  padding:18px;
   border-radius: 8px;
   box-shadow: 5px 5px 2px rgba(202, 203, 206, 0.712);
   font-weight: bold;
+  position: relative;
 }
 .well > h6{
   font-size: 12px;
@@ -638,10 +639,16 @@ main
 }
 .btn-warning{
   background-color: #f3b122;
+  position: absolute;
+  right: 15%;
+  transform: translateY(20px);
 }
 .btn-danger{
   background-color: #f33a22;
   color: #fff;
+  position: absolute;
+  right: 5%;
+  transform: translateY(20px);
 }
 
 .btn-reset{
