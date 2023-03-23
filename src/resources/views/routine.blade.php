@@ -7,11 +7,14 @@
   <title>webapp</title>
   <script src="{{asset('/assets/js/jquery-3.6.1.min.js')}}" defer></script>
   <script src="https://kit.fontawesome.com/eca7fb4794.js" crossorigin="anonymous" defer></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous" defer></script>
   <script src="{{asset('/assets/js/main.js')}}" defer></script>
   <script src="{{asset('/assets/js/storage.js')}}" defer></script>
   <script src="{{asset('/assets/js/drag.js')}}" defer></script>
+  <script src="{{asset('/assets/js/sticky-note.js')}}" defer></script>
   <script src="https://chancejs.com/chance.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/jkanban@1.3.1/dist/jkanban.min.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jkanban@1.3.1/dist/jkanban.min.css">
   <link rel="stylesheet" href="{{asset('/assets/css/reset.css')}}">
   <link rel="stylesheet" href="{{asset('/assets/css/routine.css')}}">
@@ -68,7 +71,7 @@
   <div class="container">
     <main class="main">
       <div class="top-title">
-        <h2 class="routine-title">WSシート保管</h2>
+        <h2 class="routine-title">WS 今日の一言</h2>
         <h2 class="routine-title">タスク追跡</h2>
       </div>
 
@@ -88,6 +91,10 @@
               </p>
             </div>
           </div>
+          <div id="controller">
+            <input type="button" id="add-button" value="追加">
+          </div>
+          <div id="sticky-note-container"></div>
         </section>
   
         <section class="task">

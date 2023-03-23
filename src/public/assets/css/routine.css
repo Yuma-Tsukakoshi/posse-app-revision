@@ -666,3 +666,16 @@ main
   text-align: center;
   transition: color , background-color .5s;
 }
+
+#sticky-note-container {
+  height: 400px;
+}
+.note {
+  background-color: aliceblue;
+  padding: 10px;
+  cursor: pointer;
+}
+.note > input[type="text"] {
+  width: 90%;
+  height: 5rem;
+}
