@@ -9,7 +9,10 @@
   <script src="https://kit.fontawesome.com/eca7fb4794.js" crossorigin="anonymous" defer></script>
   <script src="{{asset('/assets/js/main.js')}}" defer></script>
   <script src="{{asset('/assets/js/storage.js')}}" defer></script>
+  <script src="{{asset('/assets/js/drag.js')}}" defer></script>
   <script src="https://chancejs.com/chance.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/jkanban@1.3.1/dist/jkanban.min.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jkanban@1.3.1/dist/jkanban.min.css">
   <link rel="stylesheet" href="{{asset('/assets/css/reset.css')}}">
   <link rel="stylesheet" href="{{asset('/assets/css/routine.css')}}">
 </head>
@@ -22,13 +25,13 @@
     <nav class="header-nav">
       <ul class="header-nav-contents">
         <li class="header-nav-list">
-          <button class="header-button js-openWebapp">Webapp</button>
+          <button class="header-button js-openWebapp">Webappに戻る</button>
         </li>
         <li class="header-nav-list">
           <div class="header-button nav-title">POSSE</div>
           <ul class="dropdown-menu">
             <li class="nav-items">
-              <a href="https://docs.google.com/spreadsheets/d/1RS0V39nABZt5I-CgEype0yDlYIs922DnnaejWlsm-B8/edit#gid=1824200838" target="_blank">ph3カリキュラム</a>
+              <a href="https://github.com/Yuma-Tsukakoshi" target="_blank">Github</a>
             </li>
             <li class="nav-items">
               <a href="https://docs.google.com/spreadsheets/d/1W6UFRlzyWrJnPTNKabJUHVVEwBDMmy8ef1jAMpvpKCY/edit#gid=688004640" target="_blank">3.0振り返り</a>
@@ -66,7 +69,7 @@
     <main class="main">
       <div class="top-title">
         <h2 class="routine-title">ルーティンやること</h2>
-        <h2 class="routine-title">タスク追跡ツール</h2>
+        <h2 class="routine-title">タスク追跡</h2>
       </div>
 
       <div class="main-contents">
@@ -98,27 +101,29 @@
   
         <section class="task">
           <div class="task-wrapper">
-            <h3>タスク生成</h3>
             <form id="taskInputForm">
-              <button type="submit" class="btn btn-primary">生成</button>
               <div class="form-group">
-                <label for="task-name" class="flex-label">タスク名</label>
+                <label for="task-name" class="label1">タスク名</label>
                 <input type="text" class="form-content" id="task-name" placeholder="タスク名記入..." required>
               </div>
               <div class="flex">
                 <div class="form-group">
-                  <label for="task-severity"  class="flex-label">優先度</label>
+                  <label for="task-severity" class="flex-label">優先度</label>
                   <select id="task-severity" class="form-content" required>
-                    <option class="severity-option" value="高い" >高い</option>
-                    <option class="severity-option" value="標準" >標準</option>
-                    <option class="severity-option" value="低い" >低い</option>
+                    <option class="severity-option" value="必須" >必須</option>
+                    <option class="severity-option" value="任意" >任意</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="task-deadline">締切日</label>
                   <input type="date" class="form-content" id="task-deadline" value="" required>
                 </div>
+                <div class="form-group">
+                  <label for="task-url">フォームリンク</label>
+                  <input type="url" class="form-content" id="task-url" value="" required placeholder="フォームやサイトリンク記入...">
+                </div>
               </div>
+              <button type="submit" class="header-button create-task-btn">生成</button>
             </form>
           </div>
           <div class="created-task">
