@@ -637,11 +637,16 @@ footer-label
 
 /* meter */
 .meter{
-  width: 34px;
-  height: 30px;
+  width: 45px;
+  height: 20px;
   border-radius: 6px;
   border: 1px solid black;
   display: none;
+}
+.js-record-time{
+  padding: 10px 15px;
+  position: absolute;
+  bottom: 6%;
 }
 
 /* 
