@@ -22,7 +22,7 @@ $(".js-record-time").on("click",function(){
   })
   console.log(content_sum);
   if(language_sum==content_sum){
-    $("#studyHour").val(language_sum);
+    $("#studyHour").val(Math.round(language_sum/60,1));
     alert("時間が正常に反映されました");
   }else{
     alert("コンテンツと言語の時間が合いません");
