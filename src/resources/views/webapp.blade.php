@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="{{asset('/assets/css/style.css')}}">
   <script src="{{asset('/assets/js/jquery-3.6.1.min.js')}}" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
+  <script src="{{asset('/assets/js/meter.js')}}" defer></script>
   <script src="{{asset('/assets/js/count.js')}}" defer></script>
   <script src="{{asset('/assets/js/bar-charts.js')}}" defer></script>
   <script src="{{asset('/assets/js/donut-charts-1.js')}}" defer></script>
@@ -48,7 +49,7 @@
                     <h2 class="modal-title">学習コンテンツ(複数選択可)</h2>
                     <div class="contents-list">
                       @foreach ($contents as $content)
-                      <input type="checkbox" id="check{{$loop->iteration}}" class="input-checkbox" name="content" value="{{$content->content}}"><label for="check{{$loop->iteration}}" class="label">{{$content->content}}<input type="number" value="0" min="0" max="20" step="1" class="meter"></label>
+                      <input type="checkbox" id="check{{$loop->iteration}}" class="input-checkbox js-check" name="content" value="{{$content->content}}"><label for="check{{$loop->iteration}}" class="label">{{$content->content}}<input type="number" value="0" min="0" max="300" step="10" class="meter content-meter"></label>
                       @endforeach
                     </div>
                   </div>
@@ -56,15 +57,16 @@
                     <h2 class="modal-title">学習言語(複数選択可)</h2>
                     <div class="language-list">
                       @foreach ($languages as $language)
-                      <input type="checkbox" id="check{{$loop->iteration + count($contents)}}" class="input-checkbox" name="language" value="{{$language->language}}"><label for="check{{$loop->iteration + count($contents)}}" class="label">{{$language->language}}<input type="number" value="0" min="0" max="20" step="1" class="meter"></label>
+                      <input type="checkbox" id="check{{$loop->iteration + count($contents)}}" class="input-checkbox js-check" name="language" value="{{$language->language}}"><label for="check{{$loop->iteration + count($contents)}}" class="label">{{$language->language}}<input type="number" value="0" min="0" max="300" step="10" class="meter language-meter"></label>
                       @endforeach
                     </div>
                   </div>
+                  <button class="header-button js-record-time">時間反映(min)</button>
                 </div>
               </div>
               <div class="modal-right">
                 <div class="study-time">
-                  <h2 class="modal-title">学習時間</h2>
+                  <h2 class="modal-title">学習時間(hour)</h2>
                   <input class="study-time-box input-text" type="text" id="studyHour" name="study-hour" size="34">
                 </div>
                 <div class="twitter-section">
