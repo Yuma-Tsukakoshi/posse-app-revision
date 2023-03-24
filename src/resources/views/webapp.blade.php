@@ -49,7 +49,7 @@
                     <h2 class="modal-title">学習コンテンツ(複数選択可)</h2>
                     <div class="contents-list">
                       @foreach ($contents as $content)
-                      <input type="checkbox" id="check{{$loop->iteration}}" class="input-checkbox js-check" name="content" value="{{$content->content}}"><label for="check{{$loop->iteration}}" class="label">{{$content->content}}<input type="number" value="0" min="0" max="20" step="1" class="meter content-meter"></label>
+                      <input type="checkbox" id="check{{$loop->iteration}}" class="input-checkbox js-check" name="content" value="{{$content->content}}"><label for="check{{$loop->iteration}}" class="label">{{$content->content}}<input type="number" value="0" min="0" max="300" step="10" class="meter content-meter"></label>
                       @endforeach
                     </div>
                   </div>
