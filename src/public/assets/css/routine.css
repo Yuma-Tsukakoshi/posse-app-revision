@@ -651,7 +651,7 @@ main
 }
 
 #sticky-note-container {
-  height: 400px;
+  height: 70vh;
 }
 .note {
   background-color: aliceblue;
