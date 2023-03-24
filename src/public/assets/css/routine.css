@@ -661,7 +661,7 @@ main
 }
 .note > input[type="text"] {
   width: 90%;
-  height: 5rem;
+  height: 4rem;
   padding: 4px;
   font-weight: bold;
 }

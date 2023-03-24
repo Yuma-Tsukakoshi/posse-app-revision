@@ -753,6 +753,7 @@ responsive
   }
   .label{
     font-size: 16px;
+    display: flex;
   }
   /* ↑ modal-top ↑ */
   .access-record{

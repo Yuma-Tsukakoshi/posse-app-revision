@@ -49,7 +49,7 @@
                     <h2 class="modal-title">学習コンテンツ(複数選択可)</h2>
                     <div class="contents-list">
                       @foreach ($contents as $content)
-                      <input type="checkbox" id="check{{$loop->iteration}}" class="input-checkbox js-check" name="content" value="{{$content->content}}"><label for="check{{$loop->iteration}}" class="label">{{$content->content}}<input type="number" value="0" min="0" max="20" step="1" class="meter"></label>
+                      <input type="checkbox" id="check{{$loop->iteration}}" class="input-checkbox js-check" name="content" value="{{$content->content}}"><label for="check{{$loop->iteration}}" class="label">{{$content->content}}<input type="number" value="0" min="0" max="20" step="1" class="meter content-meter"></label>
                       @endforeach
                     </div>
                   </div>
@@ -57,10 +57,11 @@
                     <h2 class="modal-title">学習言語(複数選択可)</h2>
                     <div class="language-list">
                       @foreach ($languages as $language)
-                      <input type="checkbox" id="check{{$loop->iteration + count($contents)}}" class="input-checkbox js-check" name="language" value="{{$language->language}}"><label for="check{{$loop->iteration + count($contents)}}" class="label">{{$language->language}}<input type="number" value="0" min="0" max="20" step="1" class="meter"></label>
+                      <input type="checkbox" id="check{{$loop->iteration + count($contents)}}" class="input-checkbox js-check" name="language" value="{{$language->language}}"><label for="check{{$loop->iteration + count($contents)}}" class="label">{{$language->language}}<input type="number" value="0" min="0" max="20" step="1" class="meter language-meter"></label>
                       @endforeach
                     </div>
                   </div>
+                  <button class="header-button js-record-time">時間反映</button>
                 </div>
               </div>
               <div class="modal-right">
