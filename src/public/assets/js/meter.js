@@ -1,11 +1,10 @@
 $(".js-check").change(function(){
   // console.log($(this).next().children());
   if($(this).prop('checked')){
-    $(this).next().children().css('display','block')
+    $(this).next().children().css('display','inline-block')
   }else{
     $(this).next().children().css('display','none')
     $(this).next().children().val(0);
-    console.log($(this).next().children().val());
   }
 })
 
@@ -16,13 +15,13 @@ $(".js-record-time").on("click",function(){
   $(".language-meter").each(function(){
     language_sum += parseInt($(this).val());
   })
-  console.log(language_sum);
   $(".content-meter").each(function(){
     content_sum += parseInt($(this).val());
   })
-  console.log(content_sum);
   if(language_sum==content_sum){
-    $("#studyHour").val(Math.round(language_sum/60,1));
+    const floatTime = Math.round(content_sum*10/60)/10;
+    console.log(floatTime);
+    $("#studyHour").val(floatTime);
     alert("時間が正常に反映されました");
   }else{
     alert("コンテンツと言語の時間が合いません");
