@@ -1,0 +1,36 @@
+.error-main{
+  height: 100%;
+}
+.access-error{
+  margin-top: 23%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+}
+.error-title{
+  display: block;
+  font-size: 16px;
+  color: rgb(244, 168, 64);
+}
+.icon-attention{
+  margin: 10px 0;
+}
+.icon-attention img{
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+
+}
+.error-text{
+  display: block;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+@media screen and (max-width:480px) {
+  .access-error{
+    margin-top: 55%;
+  }
+}
